@@ -11,11 +11,12 @@ class StatsServiceTest {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long expected = 8+15+13+15+17+20+19+20+7+14+14+18;
+        long expected = 8 + 15 + 13 + 15 + 17 + 20 + 19 + 20 + 7 + 14 + 14 + 18;
         long actuall = service.amountSales(sales);
 
         Assertions.assertEquals(expected, actuall);
     }
+
     @Test
     public void shouldCountAverageSales() {
         StatsService service = new StatsService();
@@ -26,6 +27,7 @@ class StatsServiceTest {
 
         Assertions.assertEquals(expected, actuall);
     }
+
     @Test
     public void shouldCountMaxSales() {
         StatsService service = new StatsService();
@@ -36,6 +38,7 @@ class StatsServiceTest {
 
         Assertions.assertEquals(expected, actuall);
     }
+
     @Test
     public void shouldCountMinSales() {
         StatsService service = new StatsService();
@@ -46,6 +49,7 @@ class StatsServiceTest {
 
         Assertions.assertEquals(expected, actuall);
     }
+
     @Test
     public void shouldCountBelowAverageSales() {
         StatsService service = new StatsService();
